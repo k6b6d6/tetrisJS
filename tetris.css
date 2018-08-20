@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+    font-size: 20px;
+    background-color: none; 
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {    
+    text-decoration: none;
+}
+
+span {
+    padding: 0.25em 0.5em;
+}
+
+div.fake-piece {
+
+    border: 1px solid white;
+    background-color: rgba(100, 100, 100, 0.4);
+}
+
+div.tile {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    
+    pointer-events: none;
+}
+
+div.blocked {
+
+    border: 1px solid white;
+    background-color: rgba(240, 240, 240, 0.7);
+}
+
+div.piece {
+
+    border: 1px solid white;
+    background-color: rgba(220, 220, 220, 0.4);
+}
+
+
+div.info-panel {
+    min-width: 5em;  
+}
+
+.width_25 {
+    width: 25%;
+}
+
+.width_33 {
+    width: 33.3%;
+}
+
+.width_50 {
+    width: 50%;
+}
+
+.width_66 {
+    width: 66.6%;
+}
+
+.width_75{
+    width: 75%;
+}
+
+.width_100{
+    width: 100%;
+}
+
+.height_25 {
+    height: 25%;
+}
+
+.height_33 {
+    height: 33.3%;
+}
+
+.height_50 {
+    height: 50%;
+}
+
+.height_66 {
+    height: 66.6%;
+}
+
+.height_75{
+    height: 75%;
+}
+
+.height_100{
+    height: 100%;
+}
+
+.pos_relative {
+    position: relative;
+}
+
+.pos_fixed {
+    position: fixed;
+}
+
+.pos_absolute {
+    position: absolute;
+}
+
+.container_fill_all {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+.no_border {
+    border: none;
+}
+
+.border_white {
+    border: 1px solid white;
+}
+
+.border_left_white {
+    border-left: 1px solid white;
+}
+
+.border_right_white {
+    border-right: 1px solid white;
+}
+
+.border_top_white {
+    border-top: 1px solid white;
+}
+
+.border_bottom_white {
+    border-bottom: 1px solid white;
+}
+
+.bg_white {
+    background-color: rgb(255, 255, 255); 
+}
+
+.bg_light_gray {
+    
+    background-color: rgb(200, 200, 200);
+}
+
+.bg_med_gray {
+    
+    background-color: rgb(100, 100, 100);
+}
+
+.bg_dark_gray {
+
+    background-color: rgb(50, 50, 50);
+}
+
+.bg_black {
+
+    background-color: rgb(0, 0, 0);
+}
+
+.text_white {
+    color: rgb(255, 255, 255);
+}
+
+.text_light_gray {
+    
+    color: rgb(200, 200, 200);
+}
+
+.text_light_gray:hover {
+    
+    color: rgb(255, 255, 255);
+}
+
+.text_med_gray {
+    
+    color: rgb(100, 100, 100);
+}
+
+.text_dark_gray {
+
+    color: rgb(50, 50, 50);
+}
+
+.text_black {
+
+    color: rgb(0, 0, 0);
+}
+
+.container_inline_flex {
+    display: inline-flex;
+}
+
+.container_flex {
+    display: flex;
+}
+
+.flex_row {
+    flex-direction: row;
+}
+
+.flex_col {
+    flex-direction: column;
+}
+
+.container_row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.container_col {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.items_start {
+    align-items: flex-start;
+}
+
+.items_center {
+    align-items: center;
+}
+
+.items_end {    
+    align-items: flex-end;
+}
+
+.justify_center {
+    justify-content: center;
+}
+
+.justify_space_around {
+    justify-content: space-around;
+}
+
+.justify_space_between {
+    justify-content: space-between;
+}
+
+.show {
+
+    visibility: visible;
+
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.no_padding {
+
+    padding: none;
+}
+
+.no_padding_top {
+
+    padding-top: 0;
+}
+
+.no_padding_bottom {
+
+    padding-bottom: 0;
+}
+
+.padding_top_0_5 {
+    
+    padding-top: 0.5em;
+}
+
+.padding_top_1 {
+    
+    padding-top: 1em;
+}
+
+.padding_top_1_5 {
+    
+    padding-top: 1.5em;
+}
+
+.padding_top_2 {
+    
+    padding-top: 2em;
+}
+
+.padding_bottom_0_5 {
+    
+    padding-bottom: 0.5em;
+}
+
+.padding_bottom_1 {
+    
+    padding-bottom: 1em;
+}
+
+.padding_bottom_1_5 {
+    
+    padding-bottom: 1.5em;
+}
+
+.padding_bottom_2 {
+    
+    padding-bottom: 2em;
+}
+
+.text_tiny {
+    font-size: 0.5em;
+}
+
+.text_small {
+    font-size: 0.7em;
+}
+
+.text_med {
+    font-size: 1em;
+}
+
+.text_big {
+    font-size: 1.5em;
+}
+
+.text_huge {
+    font-size: 2em;
+}
+
+.text_right_align {
+    text-align: right;    
+}
+
+.text_center_align {
+    text-align: center;    
+}
+
+.text_left_align {
+    text-align: left;    
+}
+
+.line_height_1 {
+    line-height: 1em;
+}
+
+.line_height_1_5 {
+    line-height: 1.5em;
+}
+
+.line_height_2 {
+    line-height: 2em;
+}
